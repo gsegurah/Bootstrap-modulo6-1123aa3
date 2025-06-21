@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedanes | Concesionario de Vehículos Armenia</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .card {
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            overflow: hidden;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+        .card-img-top {
+            height: 220px; /* Altura fija para las imágenes de las tarjetas */
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .card-title {
+            color: #0056b3;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #2c3e50 !important;
+            color: #ecf0f1;
+            padding: 30px 0;
+        }
+        footer h5 {
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+        footer p {
+            font-size: 0.95rem;
+        }
+        footer a {
+            color: #85a8d9;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        footer a:hover {
+            color: #aed6f1;
+            text-decoration: underline;
+        }
+        .social-icons a {
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2);
+            color: #0d6efd;
+        }
+        .footer hr {
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        h2 {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Concesionario de Vehículos Armenia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" aria-current="page" href="#" id="navbarDropdownModelos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Modelos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownModelos">
+                            <li><a class="dropdown-item" href="sedanes.html">Sedanes</a></li>
+                            <li><a class="dropdown-item" href="camionetas.html">Camionetas</a></li>
+                            <li><a class="dropdown-item" href="deportivos.html">Deportivos</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Vehículos Eléctricos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container my-5">
+            <h2 class="text-center mb-5">Nuestros Modelos de Sedanes</h2>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="./img/sedanes/sedan1.jpg" class="card-img-top" alt="Sedán Urbano">
+                        <div class="card-body">
+                            <h5 class="card-title">Sedán Compacto y Eficiente</h5>
+                            <p class="card-text">Perfecto para la ciudad, combina bajo consumo con un diseño moderno y ágil.</p>
+                            <a href="#" class="btn btn-secondary">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="./img/sedanes/sedan2.jpg" class="card-img-top" alt="Sedán Ejecutivo">
+                        <div class="card-body">
+                            <h5 class="card-title">Sedán Ejecutivo Elegante</h5>
+                            <p class="card-text">Ideal para negocios y viajes largos, ofrece un interior espacioso y tecnología de punta.</p>
+                            <a href="#" class="btn btn-secondary">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="./img/sedanes/sedan3.jpg" class="card-img-top" alt="Sedán Deportivo">
+                        <div class="card-body">
+                            <h5 class="card-title">Sedán Deportivo de Alto Rendimiento</h5>
+                            <p class="card-text">Experimenta la emoción con su potente motor y su aerodinámica agresiva.</p>
+                            <a href="#" class="btn btn-secondary">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="./img/sedanes/sedan4.jpg" class="card-img-top" alt="Sedán Híbrido">
+                        <div class="card-body">
+                            <h5 class="card-title">Sedán Híbrido Ecológico</h5>
+                            <p class="card-text">Combina eficiencia de combustible con bajas emisiones, ideal para un futuro más verde.</p>
+                            <a href="#" class="btn btn-secondary">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="./img/sedanes/sedan5.jpg" class="card-img-top" alt="Sedán Lujo Premium">
+                        <div class="card-body">
+                            <h5 class="card-title">Sedán de Lujo Premium</h5>
+                            <p class="card-text">El máximo confort y exclusividad, con acabados de primera y todas las comodidades.</p>
+                            <a href="#" class="btn btn-secondary">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="./img/sedanes/sedan6.jpg" class="card-img-top" alt="Sedán Familiar">
+                        <div class="card-body">
+                            <h5 class="card-title">Sedán Amplio y Familiar</h5>
+                            <p class="card-text">Espacio y seguridad para toda la familia, con un diseño práctico y funcional.</p>
+                            <a href="#" class="btn btn-secondary">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+                    <h5>Concesionario de Vehículos Armenia</h5>
+                    <p class="mb-1"><i class="fas fa-map-marker-alt me-2"></i> Calle 21 #14-25, Armenia, Quindío</p>
+                    <p class="mb-1"><i class="fas fa-phone me-2"></i> +57 310 123 4567</p>
+                    <p class="mb-0"><i class="fas fa-envelope me-2"></i> info@autocentro.com</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <h5>Síguenos en nuestras redes</h5>
+                    <div class="social-icons mt-3">
+                        <a href="https://www.facebook.com/tupagina" target="_blank" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="https://wa.me/573101234567" target="_blank" class="text-white me-3"><i class="fab fa-whatsapp fa-lg"></i></a>
+                        <a href="https://www.instagram.com/tuusuario" target="_blank" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="https://twitter.com/tuusuario" target="_blank" class="text-white"><i class="fab fa-x-twitter fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 border-light">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2025 AutoCentro. Todos los derechos reservados.</p>
+                    <p class="mb-0">&copy; 2025 Pexel. Imagenes gratuitas. Todos los derechos reservados.</p>
+                    <p class="mb-0">Diseñado con <a href="https://getbootstrap.com/" class="text-white" target="_blank">Bootstrap 5.3.7</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
